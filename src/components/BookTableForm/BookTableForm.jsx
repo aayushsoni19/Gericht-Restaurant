@@ -6,7 +6,7 @@ const BookTableForm = () => {
   const navigate = useNavigate();
 
     return (
-        <div>
+        <div class="background">
             <div class="book_container">
                 <div class="card">
                     <div class="card-image">

@@ -5,9 +5,13 @@
     height: 100vh;
 	font-family: "DM Sans", sans-serif;
 	line-height: 1.5;
-	background-color: #f1f3fb;
     position: absolute;
     top: 0;
+	background: url('/src/assets/bg.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+	background-attachment: fixed;
 }
 
 img {
@@ -22,12 +26,12 @@ input {
 }
 
 .card {
-	margin: 2rem auto;
+	margin: 10rem auto;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	max-width: 425px;
-	background-color: #FFF;
+	background-color: var(--color-black);
 	border-radius: 10px;
 	box-shadow: 0 10px 20px 0 rgba(#999, .25);
 	padding: .75rem;
@@ -87,6 +91,7 @@ input {
 .input-field {
 	border: 0;
 	z-index: 1;
+	color: var(--color-golden);
 	background-color: transparent;
 	border-bottom: 2px solid #eee; 
 	font: inherit;
@@ -94,6 +99,10 @@ input {
 	padding: .25rem 0;
 }
 
+::placeholder { 
+	color: var(--color-golden);
+	opacity: 1; 
+  }
 
 .action {
 	margin-top: 2rem;
@@ -105,9 +114,9 @@ input {
 	padding: 1em;
 	width: 100%;
 	font-weight: 500;
-	background-color: #6658d3;
+	background-color: var(--color-golden);
 	border-radius: 6px;
-	color: #FFF;
+	color: #000;
 	border: 0;
 }
 
