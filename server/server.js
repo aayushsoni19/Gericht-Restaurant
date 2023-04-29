@@ -20,7 +20,9 @@ app.use(cors({
     origin: ["http://localhost:3000", "http://localhost:5173", "*"],
     methods: ["GET", "POST"],
     credentials: true
-}))
+}));
+
+app.use(require("./routes/reservation"))
 
 app.get("/", (req, res) => {
     res.send("Welcome to Server Side")
