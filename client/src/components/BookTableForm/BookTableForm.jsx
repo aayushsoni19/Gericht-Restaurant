@@ -21,11 +21,13 @@ const BookTableForm = () => {
 
     const bookTable = async () => {
         const { firstName, lastName, contact, date, time } = details;
-        const res = axios.post("http://localhost:8080/reservation", {
+        const res = await axios.post("http://localhost:8080/reservations", {
             firstName, lastName, contact, date, time
         });
 
-        const result = await res.json();
+        console.log(res);
+
+        const result = await res.json;
         const status = res.status;
 
         if (status == 200) {
@@ -53,6 +55,7 @@ const BookTableForm = () => {
     }
 
     const handleSubmit = (e) => {
+        e.preventDefault();
 
         if (details.firstName == "" || details.lastName == "" || details.contact == "" || details.date == " " || details.time == "") {
             toast.error('Please Enter all Fields', {
