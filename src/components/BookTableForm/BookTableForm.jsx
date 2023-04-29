@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "./BookTableForm.css";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookTableForm = () => {
     const [details, setDetails] = useState({
@@ -19,14 +21,32 @@ const BookTableForm = () => {
     const handleSubmit = (e) => {
 
         if (details.firstName == "" || details.lastName == "" || details.contact == "" || details.date == " " || details.time == "") {
-            alert("Please Enter All Fields")
+            toast.error('Please Enter all Fields', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         } else {
-            alert("Your Table is Booked...");
+            toast.success('Your table is booked.', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
             navigate("/", { replace: true })
         }
     }
 
     return (
+        <>
+        <ToastContainer/>
         <div class="background">
             <div class="book_container">
                 <div class="card">
@@ -60,6 +80,7 @@ const BookTableForm = () => {
             </div>
 
         </div>
+        </>
     )
 }
 
