@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./BookTableForm.css";
 import { useNavigate } from "react-router-dom";
 
 const BookTableForm = () => {
-  const navigate = useNavigate();
+    const [details, setDetails] = useState({
+        firstName : "",
+        lastName : "",
+        contact : "",
+        date : "",
+        time : ""
+        });
+    const navigate = useNavigate();
 
     return (
         <div class="background">
