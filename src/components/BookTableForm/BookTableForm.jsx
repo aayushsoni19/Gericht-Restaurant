@@ -18,7 +18,7 @@ const BookTableForm = () => {
 
     const handleSubmit = (e) => {
 
-        if (details.firstName == " " || details.lastName == " " || details.contact == " " || details.date == " " || details.time == " ") {
+        if (details.firstName == "" || details.lastName == "" || details.contact == "" || details.date == " " || details.time == "") {
             alert("Please Enter All Fields")
         } else {
             alert("Your Table is Booked...");
