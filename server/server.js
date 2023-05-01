@@ -23,6 +23,7 @@ app.use(cors({
 }));
 
 app.use(require("./routes/reservation"))
+app.use(require("./routes/newsLetter"));
 
 app.get("/", (req, res) => {
     res.send("Welcome to Server Side")
