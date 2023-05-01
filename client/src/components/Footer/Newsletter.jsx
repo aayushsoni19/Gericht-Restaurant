@@ -42,7 +42,7 @@ return (
       </div>
       <div className="app__newsletter-input flex__center">
         <input type="email" name='email' placeholder="Enter your email address" onChange={handleChange}/>
-        <button type="button" className="custom__button">Subscribe</button>
+        <button type="button" className="custom__button" onSubmit={handleSubmit}>Subscribe</button>
       </div>
     </div>
   </>
