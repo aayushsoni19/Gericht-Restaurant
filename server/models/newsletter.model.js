@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const newsLetterSchema = new mongoose.Schema({
-    email : {
+    userEmail : {
         type : String,
         required : true
     }
