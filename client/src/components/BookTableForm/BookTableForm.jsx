@@ -67,7 +67,18 @@ const BookTableForm = () => {
                 draggable: true,
                 progress: undefined,
             });
-        } else {
+        } else if(details.contact.length != 10){
+            toast.error('Contact Number Should be of 10 Digits Only', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+         else {
             bookTable();
         }
     }
