@@ -13,7 +13,7 @@ const AboutUs = () => (
       <div className="app__aboutus-content_about">
         <h1 className="headtext__cormorant">About Us</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+        <p className="p__opensans">At Gericht, we're passionate about creating unforgettable dining experiences for our guests. Our story begins with our love for good food and great company. We believe that food should not just be a source of nourishment, but a celebration of life's simple pleasures.</p>
       </div>
 
       <div className="app__aboutus-content_knife flex__center">
@@ -23,7 +23,7 @@ const AboutUs = () => (
       <div className="app__aboutus-content_history">
         <h1 className="headtext__cormorant">Our History</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+        <p className="p__opensans">Gericht is relatively a new restaurant. It is the dream of chef Massimilano Valenzi which is finally coming true after 13 years of his hardwork in the culinary world.</p>
       </div>
     </div>
   </div>
