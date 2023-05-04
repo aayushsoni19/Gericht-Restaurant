@@ -12,7 +12,7 @@ const Newsletter = () => {
   }
 
   const subscribe = async () => {
-    const res = await axios.post("http://localhost:8080/newsletter", {
+    const res = await axios.post("https://gericht-backend.vercel.app/newsletter", {
       email
     });
 
