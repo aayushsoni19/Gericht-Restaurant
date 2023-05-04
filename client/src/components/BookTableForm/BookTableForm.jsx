@@ -21,7 +21,7 @@ const BookTableForm = () => {
 
     const bookTable = async () => {
         const { firstName, lastName, contact, date, time } = details;
-        const res = await axios.post("http://localhost:8080/reservations", {
+        const res = await axios.post("https://gericht-backend.vercel.app/reservations", {
             firstName, lastName, contact, date, time
         });
 
