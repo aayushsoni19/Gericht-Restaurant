@@ -103,7 +103,7 @@ const BookTableForm = () => {
                                 <input type="text" name='lastName' class="input-field" placeholder='Last Name' required onChange={handleChange} />
                             </div>
                             <div class="input">
-                                <input type="number" name='contact' class="input-field" placeholder='Phone Number' required onChange={handleChange} />
+                                <input type="number" name='contact' class="input-field" max="9999999999" placeholder='Phone Number' required onChange={handleChange} />
                             </div>
                             <div class="input">
                                 <input type="date" name='date' class="input-field" required onChange={handleChange} />
